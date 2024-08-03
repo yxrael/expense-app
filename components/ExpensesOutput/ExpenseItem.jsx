@@ -19,7 +19,7 @@ export const ExpenseItem = ({description, amount, date}) => {
     </Pressable>
   )
 }
-
+// comment
 const styles = StyleSheet.create({
     expenseItem: {
         padding: 12,
