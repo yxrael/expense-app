@@ -5,12 +5,15 @@ import { useNavigation } from "@react-navigation/native"
 
 
 
-export const ExpenseItem = ({description, amount, date}) => {
+export const ExpenseItem = ({id, description, amount, date}) => {
 
     const navigation = useNavigation();
 
     const expensePressHandler = () => {
-        navigation.navigate('ManageExpense');
+        navigation.navigate('ManageExpense', {
+            expenseId: id
+        }
+        );
     }
 
   return (
